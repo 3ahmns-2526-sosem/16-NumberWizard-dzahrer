@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     {
         CalculateGuess();
     }
-
     public void Higher()
     {
         min = guess + 1;
