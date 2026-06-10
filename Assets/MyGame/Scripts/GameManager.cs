@@ -15,13 +15,11 @@ public class GameManager : MonoBehaviour
     {
         CalculateGuess();
     }
-
     public void Higher()
     {
         min = guess + 1;
         CalculateGuess();
     }
-
     private void CalculateGuess()
     {
         guess = (min + max) / 2;
