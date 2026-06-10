@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 276119891}
   - component: {fileID: 276119890}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: CorrectTEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 503374389}
   - component: {fileID: 503374388}
   m_Layer: 5
-  m_Name: Text
+  m_Name: CurrentGuessTEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1044,7 +1044,7 @@ GameObject:
   - component: {fileID: 780815358}
   - component: {fileID: 780815357}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: HigherTEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1537,7 +1537,7 @@ GameObject:
   - component: {fileID: 985106253}
   - component: {fileID: 985106252}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: LowerTEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1777,7 +1777,7 @@ GameObject:
   - component: {fileID: 1403431746}
   - component: {fileID: 1403431747}
   m_Layer: 5
-  m_Name: Text Area
+  m_Name: CurrentGuesser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1827,6 +1827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1855441051}
+  - component: {fileID: 1855441052}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1849,6 +1850,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1855441052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855441050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e40a1fdbdd962440a05f6b3ea1e5095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 1
+  max: 100
+  guessText: {fileID: 503374388}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
