@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int min = 1;
     [SerializeField] private int max = 100;
 
-
     [Header("UI")]
     [SerializeField] private TMP_Text guessText;
     [SerializeField] private int guess;
