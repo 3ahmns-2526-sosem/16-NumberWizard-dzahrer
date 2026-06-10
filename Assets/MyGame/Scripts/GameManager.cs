@@ -13,6 +13,17 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        CalculateGuess();
+    }
+
+    public void Higher()
+    {
+        min = guess + 1;
+        CalculateGuess();
+    }
+
+    private void CalculateGuess()
+    {
         guess = (min + max) / 2;
 
         if (guessText != null)
