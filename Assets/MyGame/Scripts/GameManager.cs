@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
         CalculateGuess();
         messageText.text = "";
     }
-
     public void Higher()
     {
         min = guess + 1;
