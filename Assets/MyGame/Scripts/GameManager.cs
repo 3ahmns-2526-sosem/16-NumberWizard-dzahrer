@@ -81,7 +81,6 @@ public class GameManager : MonoBehaviour
         higherButton.interactable = true;
         lowerButton.interactable = true;
         correctButton.interactable = true;
-
         // Ersten Guess neu berechnen
         CalculateGuess();
     }
