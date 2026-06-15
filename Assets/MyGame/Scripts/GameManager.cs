@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text messageText;
     [SerializeField] private TMP_Text newTEXT;
 
-
     [Header("Buttons")]
     [SerializeField] private Button higherButton;
     [SerializeField] private Button lowerButton;
