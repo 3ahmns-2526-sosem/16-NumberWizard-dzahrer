@@ -102,13 +102,9 @@
 
 # 
 
-# Unity Version: YOUR\_UNITY\_VERSION
+# Unity Version: 6000.0.57f1
 
 # 
-
-# Example:
-
-# Unity Version: 6000.0.36f1
 
 # 
 
@@ -120,13 +116,7 @@
 
 # 
 
-# Start Scene: YOUR\_SCENE\_NAME
-
-# 
-
-# Example:
-
-# Start Scene: NumberWizard
+# Start Scene: MainScene
 
 # 
 
