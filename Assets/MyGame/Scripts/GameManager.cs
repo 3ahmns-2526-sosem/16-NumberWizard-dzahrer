@@ -6,21 +6,17 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private int min = 1;
     [SerializeField] private int max = 100;
-
     [Header("UI")]
     [SerializeField] private TMP_Text guessText;
     [SerializeField] private TMP_Text messageText;
     [SerializeField] private TMP_Text newTEXT;
     [SerializeField] private int startMin;
     [SerializeField] private int startMax;
-
     [Header("Buttons")]
     [SerializeField] private Button higherButton;
     [SerializeField] private Button lowerButton;
     [SerializeField] private Button correctButton;
     [SerializeField] private int guess;
-
-    
     private void Start()
 {
     startMin = min;
@@ -36,7 +32,6 @@ public class GameManager : MonoBehaviour
         min = guess + 1;
         CalculateGuess();
     }
-
     public void Lower()
     {
         // Zahl liegt unterhalb des aktuellen Guess
@@ -58,7 +53,6 @@ public class GameManager : MonoBehaviour
             messageText.text = "Invalid number range!";
             return;
         }
-
         // Binäre Suche: Mitte des aktuellen Suchbereichs
         guess = (min + max) / 2;
 
@@ -73,10 +67,8 @@ public class GameManager : MonoBehaviour
         // Ursprünglichen Bereich wiederherstellen
         min = startMin;
         max = startMax;
-
         // Erfolgsmeldung ausblenden
         messageText.text = "";
-
         // Buttons wieder aktivieren
         higherButton.interactable = true;
         lowerButton.interactable = true;
