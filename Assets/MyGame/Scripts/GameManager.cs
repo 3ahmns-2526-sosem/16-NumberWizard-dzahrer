@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text guessText;
     [SerializeField] private TMP_Text messageText;
     [SerializeField] private TMP_Text newTEXT;
+    [SerializeField] private int startMin;
+    [SerializeField] private int startMax;
 
     [Header("Buttons")]
     [SerializeField] private Button higherButton;
@@ -18,12 +20,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button correctButton;
     [SerializeField] private int guess;
 
+    
     private void Start()
-    {
-        // Binäre Suche: neue Mitte des aktuellen Bereichs
-        CalculateGuess();
-        messageText.text = "";
-    }
+{
+    startMin = min;
+    startMax = max;
+
+    CalculateGuess();
+
+    messageText.text = "";
+}
     public void Higher()
     {
         // Zahl liegt oberhalb des aktuellen Guess
@@ -61,5 +67,22 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         newTEXT.text = "Is your number: " + guess +" ?";
+    }
+    public void Restart()
+    {
+        // Ursprünglichen Bereich wiederherstellen
+        min = startMin;
+        max = startMax;
+
+        // Erfolgsmeldung ausblenden
+        messageText.text = "";
+
+        // Buttons wieder aktivieren
+        higherButton.interactable = true;
+        lowerButton.interactable = true;
+        correctButton.interactable = true;
+
+        // Ersten Guess neu berechnen
+        CalculateGuess();
     }
 }
