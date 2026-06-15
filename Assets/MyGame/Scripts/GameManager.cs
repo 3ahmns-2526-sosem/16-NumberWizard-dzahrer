@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button higherButton;
     [SerializeField] private Button lowerButton;
     [SerializeField] private Button correctButton;
-
     [SerializeField] private int guess;
 
     private void Start()
