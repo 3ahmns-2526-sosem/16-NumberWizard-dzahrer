@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
         max = guess - 1;
         CalculateGuess();
     }
-
     public void Correct()
     {
         messageText.text = "I guessed your number! -> " + guess;
@@ -47,7 +46,6 @@ public class GameManager : MonoBehaviour
         lowerButton.interactable = false;
         correctButton.interactable = false;
     }
-
     private void CalculateGuess()
     {
         if (min > max)
