@@ -58,7 +58,6 @@ public class GameManager : MonoBehaviour
             messageText.text = "Invalid number range!";
             return;
         }
-
         // Binäre Suche: Mitte des aktuellen Suchbereichs
         guess = (min + max) / 2;
 
